@@ -1,4 +1,3 @@
-import react from 'react';
 import React from 'react';
 
 import FormInput from '../form-input/form-input.component';
@@ -15,19 +14,19 @@ class SignIn extends React.Component{
         this.state={
             email:'',
             password:''
-        }
+        };
     }
 
     handleChange=event=>{
         const{value,name}=event.target;
 
-        this.setState({[name]:value})
-    }
+        this.setState({[name]:value});
+    };
 
     handleSubmit=event=>{
         event.preventDefault();
-        this.setState({email:'', password:''})
-    }
+        this.setState({email:'', password:''});
+    };
 
     render(){
         return(
