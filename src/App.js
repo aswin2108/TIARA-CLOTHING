@@ -15,7 +15,7 @@ class App extends React.Component {
 constructor(){
   super();
 
-  this.stte={
+  this.state={
      currentUser: null
   }
 }
@@ -37,7 +37,7 @@ componentWillUnmount(){
  render(){ 
   return (
     <div>
-      <Header />
+      <Header currentUser={this.state.currentUser } />
       <Switch>
         <Route exact path='/' component={HomePage} />
         <Route path='/shop' component={ShopPage} />
