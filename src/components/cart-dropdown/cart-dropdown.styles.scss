@@ -10,14 +10,22 @@
     top: 90px;
     right: 40px;
     z-index: 5;
+    // overflow-y: hidden;
+    // overflow-x: hidden;
   
     .cart-items {
       height: 240px;
       display: flex;
       flex-direction: column;
       overflow: scroll;
-      overflow-y: hidden;
       overflow-x: hidden;
+    }
+    .cart-items::-webkit-scrollbar {
+      display: none;
+    }
+    .cart-items {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
     }
   
     button {
