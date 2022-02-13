@@ -18,6 +18,11 @@ const Header=({currentUser, hidden})=>(
        <Link className='logo-container' to="/">
           <Logo className='logo' />
        </Link>
+
+       <Link className='site-name' to="/">
+            Tiara Clothing
+          </Link>
+       
        <div className='options'>
           <Link className='option' to='/shop'>
             SHOP
