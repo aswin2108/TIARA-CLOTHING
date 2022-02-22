@@ -9,6 +9,10 @@ export  const HeaderContainer= styled.div`
     margin-bottom: 25px;
 `;
 
+export const NameContainer = styled.div`
+    display: flex;
+`
+
 export const LogoContainer = styled(Link)`
     height: 100%;
     width: 70px;
@@ -16,12 +20,13 @@ export const LogoContainer = styled(Link)`
 `;
 
 export const SiteNameContainer = styled(Link)`
-     margin-left: 10px;
+      margin-left: 5px;
       height: 100%;
-      width: 100%;
+      width: 265px;
       font-size: 60px;
       font-weight: 700;
-      align-items: center;
+      position: start
+         
 `
 
 export const OptionsContainer=styled.div`
