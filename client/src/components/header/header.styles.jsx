@@ -10,7 +10,7 @@ export  const HeaderContainer= styled.div`
 
     @media screen and (max-width: 800px){
         height: 60px;
-        padding: 10px;
+        padding: 0px;
         margin-bottom: 20px;
     }
 `;
@@ -26,6 +26,7 @@ export const LogoContainer = styled(Link)`
     @media screen and (max-width: 800px){
         width: 50px;
         padding:0;
+        margin-right:10px;
     }
 `;
 
@@ -37,6 +38,8 @@ export const SiteNameContainer = styled(Link)`
       font-weight: 700;
       position: start;
       @media screen and (max-width: 800px){
+        margin-left: 0px;  
+        padding: 0px;
         display: none;
     }
          
@@ -57,4 +60,3 @@ export const OptionLink=styled(Link)`
         padding: 10px 15px;
         cursor: pointer;
 `;
-
